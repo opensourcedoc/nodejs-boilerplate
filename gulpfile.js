@@ -3,6 +3,8 @@ const gulp = require('gulp');
 const concat = require('gulp-concat');
 const babel = require('gulp-babel');
 
+const eslint = require('gulp-eslint');
+
 const del = require('del');
 
 const gulpif = require('gulp-if');
@@ -15,6 +17,13 @@ gulp.task('clean', function () {
     return del('dist/**/*', { force: true });
 });
 
+gulp.task('lint', function () {
+    return gulp.src(srclist.list)
+        .pipe(eslint())
+        .pipe(eslint.format())
+        .pipe(eslint.failAfterError());
+});
+
 gulp.task('build', function () {
     return gulp.src(srclist.list)
         .pipe(concat('app.js'))
@@ -23,4 +32,4 @@ gulp.task('build', function () {
         .pipe(gulp.dest('dist'));
 });
 
-gulp.task('default', gulp.series('clean', 'build'));
+gulp.task('default', gulp.series('clean', 'lint', 'build'));

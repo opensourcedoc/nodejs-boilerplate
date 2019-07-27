@@ -12,6 +12,7 @@ Tools used during development phase:
 
 * [Babel](https://babeljs.io/)
 * [Flow](https://flow.org/)
+* [ESLint](https://eslint.org/)
 * [Gulp](https://gulpjs.com/) and related packages
  
 There is no any external dependency on generated output.
