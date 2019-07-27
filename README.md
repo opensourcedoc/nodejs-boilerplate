@@ -51,10 +51,10 @@ All the JavaScript source files will be concatenated into single *app.js*, runni
 Invoke this command to build the app in release mode:
 
 ```
-$ npm run start
+$ npm start
 ```
 
-In addition to code concatenation, the code will be minified to save disk space.
+In addition to code concatenation, the generated code will be minified as well to save disk space.
 
 ### Check Type in Source
 
