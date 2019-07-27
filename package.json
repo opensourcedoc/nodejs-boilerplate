@@ -1,0 +1,35 @@
+{
+  "name": "nodejs-boilerplate",
+  "version": "1.0.0",
+  "description": "A minimal Node.js boilerplate project",
+  "main": "dist/app.js",
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development gulp",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production gulp",
+    "start": "node dist/app.js",
+    "start-dev": "node dist/app.js",
+    "prestart": "npm run prod",
+    "prestart-dev": "npm run dev",
+    "flow": "flow"
+  },
+  "keywords": [],
+  "author": "Michael Chen",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-flow": "^7.0.0",
+    "cross-env": "^5.2.0",
+    "del": "^5.0.0",
+    "flow-bin": "^0.104.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-if": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "isdev": "^1.0.1"
+  }
+}
