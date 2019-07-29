@@ -1,5 +1,5 @@
 // @flow
-function greet(message: string) {
+function greet(message: string): string {
     return `Hello ${message}`;
 }
 
