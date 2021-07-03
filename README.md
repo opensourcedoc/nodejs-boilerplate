@@ -72,4 +72,4 @@ You have to edit *srclist.js* to set the order for file concatenation.
 
 ## Copyright
 
-2019, Michael Chen. The repo itself is licensed under [MIT license](https://opensource.org/licenses/MIT). Nevertheless, you may adopt it in your own project with any license you prefer.
+Copyright (c) 2019 Michelle Chen. Licensed under [MIT license](https://opensource.org/licenses/MIT)
