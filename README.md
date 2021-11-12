@@ -24,16 +24,16 @@ There is no any external dependency on generated output.
 Clone this repo and install all the tools:
 
 ```
-$ git clone https://github.com/cwchentw/nodejs-boilerplate.git
-$ my nodejs-boilerplate myapp
+$ git clone https://github.com/cwchentw/nodejs-boilerplate.git myapp
 $ cd myapp
 $ npm install
 ```
 
-After editing *myapp*, update the remote URL to save it to a new remote repo:
+After editing *myapp*, update the remote URL to save it to a new repo:
 
 ```
-$ git remote set-url origin path/to/remote/repo
+$ git remote set-url origin https://example.com/user/myapp.git
+$ git push -u origin master
 ```
 
 ### Build a Project
